@@ -25,9 +25,8 @@ for i in range(1,pages):
             print('file_existed')
             continue
         except:
-            1
-        r = s.get("https://api.cytoid.io"+level+"/package", cookies = cooky)
-        f = open('./data/'+level.split('/')[-1]+".cytoidlevel",'wb')
-        f.write(r.content)
-        f.close()
-        print('successfully download',level.split('/')[-1])
+            r = s.get("https://api.cytoid.io"+level+"/package", cookies = cooky)
+            f = open('./data/'+level.split('/')[-1]+".cytoidlevel",'wb')
+            f.write(r.content)
+            f.close()
+            print('successfully download',level.split('/')[-1])
