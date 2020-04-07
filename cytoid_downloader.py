@@ -1,7 +1,7 @@
 import getpass
 import requests
 pages = int(input("pages to download (from latest) : "))
-forcemode = 0 if input("stop when reached downloaded content? (y/n)") == 'y' else 1
+forcemode = 0 if input("stop when reach downloaded content? (y/n)") == 'y' else 1
 s = requests.Session()
 username = input("username : ")
 password = getpass.getpass("password : ")
